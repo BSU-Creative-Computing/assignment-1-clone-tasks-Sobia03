@@ -1,0 +1,111 @@
+/* Setting the width and height to 100% */
+img{
+    width: 100%;
+    height: 100%;
+}
+
+/* Putting margin-bottom to d, e and f classes of images */
+.d, .e, .f {
+    margin-bottom: 20px;
+}
+
+/* Putting margin left and right to the paragraph text */
+.para {
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+/* Creating a grid by applying display grid to container */
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+/* Creating media query with maxium width 800px */
+@media screen and (max-width: 800px){
+    /* Changing width and height according to screen dimension*/
+    img{
+        width: 100%;
+        height: 100%;
+    }    
+    /* Changing grid columns and rows */       
+    .container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);     
+    }
+    /* Removing margin-bottom for d, e and f image classes */
+    .d, .e, .f {
+        margin-bottom: 0px;
+    }
+}
+
+/* Creating media query with maxium width 480px */
+@media screen and (max-width: 480px){
+    /* Changing width and height according to screen dimension*/
+    img{
+        width: 100%;
+        height: auto;
+    }     
+    /* Changing grid columns and rows */   
+    .container{
+        display: grid;
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-columns: repeat(1, 1fr);
+    }   
+}
+
+/* Creating media query with minimum width 1025px */
+@media screen and (min-width: 1025px){
+    /* Changing width according to screen dimension */
+    img{
+        width: 100%;
+    }
+    /* Changing grid columns and rows */ 
+    .container{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-row-gap: 0; 
+        grid-column-gap: 0;
+    }
+    /* Applying background color to body */
+    body{
+        background-color: rgb(246, 246, 247);
+    }
+    /* Creating a white section and adjusting its width and margin */
+    .white{
+        background-color: white;
+        width: 75%;
+        margin-left: 13%;
+    }
+    /* Modifying the margin for logo */
+    SVG{
+        margin-left: 2%;
+        margin-top: 12px;
+    }
+    /* Modifying the margin of paragraph */
+    .para{
+        margin-left: 2%;
+    }
+}
+
+/* styling the text paragraph and using google downloaded font  */
+p{
+    font-size: 20px;
+    width: 100%;
+    height: auto;
+    font-family: "Code Saver Regular";
+    margin-top: 23px; 
+}
+
+/* styling the footer */
+footer{
+    background-color: black;
+    color: white;
+    font-size: 16px;
+    font-family: "Code Saver Regular";
+    text-align: center;
+    padding: 40px;
+}
+
