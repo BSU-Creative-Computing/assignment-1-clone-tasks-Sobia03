@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Linking the html file to css file -->
+    <link rel="stylesheet" href="task3mixin.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+     
+    <!-- Creating a header that contains image-->
+    <header>     
+        <!-- Using picture and source element to specify images based on screen width -->
+        <picture>
+            <source id="u" srcset="https://via.placeholder.com/200" media="(max-width:480px)">
+            <source id="s" srcset="https://via.placeholder.com/300" media="(max-width:801px)">         
+            <img src="https://via.placeholder.com/400" alt="description">
+        </picture>
+    </header>
+</head>
+
+<body>
+    <!-- Making a section with 4 divs to create 4 lines-->
+    <section class="lines">
+    <div class="a"></div>
+    <div class="b"></div>
+    <div class="c"></div>
+    <div class="d"></div>
+    </section>
+
+    <!-- Making a section with 4 divs to create 4 circles-->
+    <section class="circles">
+        <div class="cir1"></div>
+        <div class="cir2"></div>
+        <div class="cir3"></div>
+        <div class="cir4"></div>
+    </section>
+
+    <!-- Creating an empty footer -->
+    <footer></footer>
+</body>
+</html>
