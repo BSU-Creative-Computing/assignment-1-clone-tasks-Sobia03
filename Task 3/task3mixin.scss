@@ -1,0 +1,139 @@
+$colors: #4e89ae #43658b #ed6663 #ffa372;   // List of colors
+$radii: 70px 80px 90px 100px;    // List of radii
+$hover: #444;   // Assigning a hover color
+
+// Creating a mixin for width, height and background color of the divs
+@mixin WandH($bgcolor){
+    background-color: $bgcolor;
+    width: 100%;
+    height: 43px;
+    &:hover{
+        background-color: #444;
+    }
+}
+
+// Creating a mixin for circle with background  color, border radius, width and height
+@mixin circle($main,$radius){
+    background-color: $main;
+    border-radius: 50%;
+    width: $radius;
+    height: $radius;
+    &:hover{
+        background-color: $hover;
+        cursor: pointer;
+    }
+}
+
+// Creating a mixin for media queries
+@mixin breakpoint($max-width){
+    @media screen and (max-width:$max-width){
+        @content;
+    }
+}
+
+// Assigning bg color to body
+body{
+    background-color: #d4e0e7;
+}
+
+// Assigning bg color and moving the content to center
+header{
+    background-color: #8ccff7;
+    display: flex;
+    justify-content: center;
+}
+
+// Adjusting bottom margin of the images
+img {
+    margin-bottom: -4px;
+}
+
+// Using the WandH mixin to assign colors to classes a, b, c and d
+.a{
+    @include WandH(nth($colors,1));  
+}
+.b{
+    @include WandH(nth($colors,2));  
+   
+}
+.c{
+    @include WandH(nth($colors,3));  
+  
+}
+.d{
+    @include WandH(nth($colors,4));  
+   
+}
+
+// Assigning width, height, bg color to the footer
+footer{
+    width:100%;
+    height: 40px;
+    background-color: #8ccff7;
+    margin-top: 105px;
+    @include breakpoint(621px){        // Using breakpoint mixin to set top margin for different width screens
+        margin-top: 90px;
+    }
+}
+
+// Using circle mixin to set color and radii 
+.cir1{
+    @include circle(nth($colors,1),nth($radii,1));   
+    margin-left: 20px;
+    margin-top: 95px;
+    @include breakpoint(621px){        // Using breakpoint mixin to set top margin for different width screens
+        margin-top: 50px;
+    }
+}
+
+// Using circle mixin to set color and radii 
+.cir2{
+    @include circle(nth($colors,2),nth($radii,2)); 
+    margin-top: 90px;
+    margin-left: 12px;
+    @include breakpoint(621px){         // Using breakpoint mixin to set top margin for different width screens
+        margin-top: 10px;
+    }
+}
+
+// Using circle mixin to set color and radii 
+.cir3{
+    @include circle(nth($colors,3),nth($radii,3));     
+    margin-top: 85px;
+    margin-left: 12px;
+    @include breakpoint(621px){          // Using breakpoint mixin to set top margin for different width screens
+        margin-top: 10px;
+    }
+}
+
+// Using circle mixin to set color and radii 
+.cir4{
+    @include circle(nth($colors,4),nth($radii,4)); 
+    margin-top: 77px;
+    margin-left: 12px;
+    @include breakpoint(621px){           // Using breakpoint mixin to set top margin for different width screens
+        margin-top: 10px;
+    }
+}
+
+// Adjusting the position of the circles and setting them at the center
+.circles{
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    @include breakpoint(621px){        // Setting the circles in a column for smaller screens //
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+// Adjusting the top margin of the lines
+.lines{
+    margin-top: 60px;
+}
+
+// Setting bg color and pointer cursor for lines when hovered
+.lines:hover{
+    background-color: #444;
+    cursor: pointer;
+}
