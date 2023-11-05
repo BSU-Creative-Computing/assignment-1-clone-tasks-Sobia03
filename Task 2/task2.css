@@ -1,0 +1,350 @@
+/* Importing titillium web font from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;600&display=swap');
+
+/* Setting the font and bg color of full page */
+body{
+    font-family: 'Titillium Web', sans-serif;
+    background-color: rgb(231, 229, 229);
+}
+
+/* Setting the bg color, padding, margin of the nav bar */
+nav{
+    background-color: rgb(34, 145, 243);
+    padding: 20px;
+    margin-bottom: 15px;       
+    display: flex;             /* Using flex to arrange items in nav bar */
+    justify-content: space-between  ;       /* Spacing items evenly */
+}
+
+/* Setting the margin, font and text alignment of the footer */
+footer{
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+/* Hiding the items in class menu for larger screens */
+.menu{
+    display: none;
+}
+
+/* Setting the text color, margin and displaying items inline */
+h1{
+    color: white;
+    display: inline;
+    margin: auto;
+}
+/* Setting the text color, margin and removing text decoration of anchor elements */
+a{
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    
+ /* Setting width, height and margin of placeholder */
+}
+input{
+    width: 240px;
+    height: 32px;
+    margin-left: 540px;
+    margin-right: 390px;
+
+}
+
+/* Adding margin and font family to the main div */
+.main{
+    margin-left: 15%;
+    margin-right: 15%;
+    display: flex;           /* Using flexbox to arrange elements in this container */
+    font-family: 'Titillium Web', sans-serif;
+   
+}
+
+/* Giving full width to the image setting the height on auto */
+img{
+    width: 100%;
+    height: auto;
+}
+
+/* Adding box shadow, padding and bg color to class b */
+.b{
+    box-shadow: 3px 3px 3px rgb(223, 222, 222);
+    flex: 3;                                      /* Setting flexible length of item */
+    border: 1px solid rgb(206, 205, 205);
+    height: 50%;
+    padding: 2px;
+    background-color: white;
+}
+
+/* Setting flex property to arrange elements */
+.mainflex{
+    display: flex;
+    flex: 2;                   /* Setting flexible length of item */
+    flex-direction: column;     /* Arranging items in a column */
+}
+
+/* Setting flex property to arrange elements */
+.gunmen{
+    display: flex;
+    flex: 1;                   /* Setting flexible length of item */
+    flex-direction: row;       /* Arranging items in a row */
+}
+
+/* Setting flex property to arrange elements */
+.millenium{
+    display: flex;         
+    flex: 1;                   /* Setting flexible length of item */
+    flex-direction: row;       /* Arranging items in a row */
+}
+
+/* Setting the margin and font size of the subheading */
+h2{
+    margin-top: 18px;
+    margin-left: 8px;
+    font-size: 18px;
+}
+
+/* Setting the font color, font size and margin of the text */
+p{
+    color: rgb(94,93,93);
+    font-size: 14px;
+    margin-left: 8px;
+    margin-top: -10px;
+    margin-bottom: 50px;
+}
+
+/* Adding padding, border, box shadow bg color and margin to class c */
+.c{
+    padding: 8px;
+    border: 1px solid rgb(223, 222, 222);
+    box-shadow: 3px 3px 3px rgb(206, 205, 205);
+    flex: 1;                   /* Setting flexible length of item */
+    margin-bottom: 8px;
+    margin-left: 10px;
+    background-color: white;
+}
+
+/* Adding padding, border, box shadow bg color and margin to class d */
+.d{
+    padding: 8px;
+    border: 1px solid rgb(223, 222, 222);
+    box-shadow: 3px 3px 3px rgb(206, 205, 205);
+    flex: 1;                  /* Setting flexible length of item */
+    margin-bottom: 8px;
+    margin-left: 8px;
+    background-color: white;
+}
+
+/* Adding padding, border, box shadow bg color and margin to class e */
+.e{
+    padding: 8px;
+    border: 1px solid rgb(223, 222, 222);
+    box-shadow: 3px 3px 3px rgb(206, 205, 205);
+    flex: 1;                 /* Setting flexible length of item */
+    margin-bottom: 8px;
+    margin-left: 10px;
+    background-color: white;
+}
+
+/* Adding padding, border, box shadow bg color and margin to class f */
+.f{
+    padding: 8px;
+    border: 1px solid rgb(223, 222, 222);
+    box-shadow: 3px 3px 3px rgb(206, 205, 205);
+    flex: 1;                  /* Setting flexible length of item */
+    margin-bottom: 8px;    
+    margin-left: 10px;
+    background-color: white;
+}
+
+/* Styling the buttons */
+.b1, .b2, .b3, .b4, .b5{
+    padding: 8px 11px;
+    font-size: 11px;
+    background-color: #1B98FF;
+    color: white;
+    float: right;
+    border-radius: 3px;
+    border: none;
+}
+
+/* Adding margin to button 1 */
+.b1{
+    margin-top: -45px;
+    margin-right: 20px;
+}
+
+/* Adding margin to button 2 */
+.b2{
+    margin-bottom: 15px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+/* Adding margin to button 3 */
+.b4{
+    margin-top: 53px;
+    margin-right: 10px;
+}
+
+/* Adding margin to button 3 */
+.b3{
+    margin-top: -45px;
+    margin-right: 10px;
+}
+
+/* Adding margin to button 5 */
+.b5{
+    margin-top: -20px;
+    margin-right: 10px;
+}
+
+/* Adding media query for screens with max width of 1280px */
+@media screen and (max-width: 1280px){
+    /* Adjusting styles for smaller screens */
+    .main{
+        margin-left: 1%;
+        margin-right: 1%;
+    }
+   input{
+    margin-left: 20%;
+    margin-right: 18%;
+   }
+   a{
+    margin: 6px;
+   }
+   .b5{
+    margin-bottom: 15px;
+   }
+   .b3{
+    margin-top: -20px;
+   }
+   .b2{  
+    margin-top: -5px;
+   }
+   .b4{
+    margin-top: 38px;
+   }
+   h1{
+    margin-left: 5px;
+   }
+}
+
+/* Adding media query for screens with max width of 1024px */
+@media screen and (max-width: 1024px){
+    /* Adjusting styles for screens smaller then 1024px */
+    .mainflex{
+        flex-direction: column;       /* Arranging items in a column */
+    }
+    .millenium{
+        flex-direction: column;       /* Arranging items in a column */
+    }
+    .gunmen{
+        flex-direction: column;       /* Arranging items in a column */
+    }
+    .b4{
+        margin-top: 0px;
+        margin-bottom: 15px;
+    }
+    .b2{
+        margin-top: 0px;
+    }
+    .b3{
+        margin-top: -3px;
+        margin-bottom: 15px;
+    }
+    .b5{
+        margin-bottom: 15px;
+        margin-top: -10px;
+    }
+}
+/* Adding media query for screens with max width of 800px */
+@media screen and ( max-width: 800px){
+    /* Adjusting styles for screens smaller then 800px */
+    .main{
+        display: block;            /* Making this div a block level element */
+    }
+    .millenium{
+        flex-direction: row;        /* Arranging items in a row */
+    }
+    .gunmen{
+        flex-direction: row;        /* Arranging items in a row */
+    }
+    .b1{
+        margin-top: -40px;
+    }
+    .b4{
+        margin-top: 32px;
+    }
+    .b3{
+        margin-top: -20px;
+        margin-bottom: 15px;
+    }
+    .mainflex{
+        width: 100%;
+    }
+    /* Hiding placeholder and links in the nav bar */
+    input{
+        display: none;
+    }
+    a{
+        display: none;
+    }
+    .c{
+        margin-left: 0px;
+    }
+    .d{
+        margin-left: 0px;
+    }
+    .menu{
+        display: inline;       /* Making this class a inline level element */
+        margin-left: 200px;
+    }
+    h1{
+        margin-left: 10px;
+    }
+}
+
+/* Adding media query for screens with max width of 480px */
+@media screen and (max-width: 480px){
+    /* Adjusting styles for screens smaller than 480px */
+     .gunmen{
+        display: block;        /* Making this div a block level element */
+     }
+     .millenium{
+        display: block;        /* Making this div a block level element */
+     }
+     .e{
+        margin-left: 0px;
+     }
+     .f{
+        margin-left: 0px;
+     }
+     .b1{
+        margin-top: -45px;
+     }
+     .b2{
+        margin-top: -40px;
+     }
+     .b3{
+        margin-top: -45px;
+     }
+     .b4{
+        margin-top: -45px;
+     }
+     .b5{
+        margin-top: -45px;
+     }
+     /* Hiding placeholder and links in the nav bar */
+     input{
+        display: none;
+     }
+     a{
+        display: none;
+     }
+     .menu{
+        margin-left: 220px;
+     }
+     h1{
+        margin-left: 5px;
+     }
+}    
