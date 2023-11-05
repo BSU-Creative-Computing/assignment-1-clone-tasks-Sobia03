@@ -1,0 +1,154 @@
+body {
+  background-color: #d4e0e7;
+}
+
+header {
+  background-color: #8ccff7;
+  display: flex;
+  justify-content: center;
+}
+
+img {
+  margin-bottom: -4px;
+}
+
+.a {
+  background-color: #4e89ae;
+  width: 100%;
+  height: 43px;
+}
+.a:hover {
+  background-color: #444;
+}
+
+.b {
+  background-color: #43658b;
+  width: 100%;
+  height: 43px;
+}
+.b:hover {
+  background-color: #444;
+}
+
+.c {
+  background-color: #ed6663;
+  width: 100%;
+  height: 43px;
+}
+.c:hover {
+  background-color: #444;
+}
+
+.d {
+  background-color: #ffa372;
+  width: 100%;
+  height: 43px;
+}
+.d:hover {
+  background-color: #444;
+}
+
+footer {
+  width: 100%;
+  height: 40px;
+  background-color: #8ccff7;
+  margin-top: 105px;
+}
+@media screen and (max-width: 621px) {
+  footer {
+    margin-top: 90px;
+  }
+}
+
+.cir1 {
+  background-color: #4e89ae;
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  margin-left: 20px;
+  margin-top: 95px;
+}
+.cir1:hover {
+  background-color: #444;
+  cursor: pointer;
+}
+@media screen and (max-width: 621px) {
+  .cir1 {
+    margin-top: 50px;
+  }
+}
+
+.cir2 {
+  background-color: #43658b;
+  border-radius: 50%;
+  width: 80px;
+  height: 80px;
+  margin-top: 90px;
+  margin-left: 12px;
+}
+.cir2:hover {
+  background-color: #444;
+  cursor: pointer;
+}
+@media screen and (max-width: 621px) {
+  .cir2 {
+    margin-top: 10px;
+  }
+}
+
+.cir3 {
+  background-color: #ed6663;
+  border-radius: 50%;
+  width: 90px;
+  height: 90px;
+  margin-top: 85px;
+  margin-left: 12px;
+}
+.cir3:hover {
+  background-color: #444;
+  cursor: pointer;
+}
+@media screen and (max-width: 621px) {
+  .cir3 {
+    margin-top: 10px;
+  }
+}
+
+.cir4 {
+  background-color: #ffa372;
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  margin-top: 77px;
+  margin-left: 12px;
+}
+.cir4:hover {
+  background-color: #444;
+  cursor: pointer;
+}
+@media screen and (max-width: 621px) {
+  .cir4 {
+    margin-top: 10px;
+  }
+}
+
+.circles {
+  display: flex;
+  margin: auto;
+  justify-content: center;
+}
+@media screen and (max-width: 621px) {
+  .circles {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.lines {
+  margin-top: 60px;
+}
+
+.lines:hover {
+  background-color: #444;
+  cursor: pointer;
+}/*# sourceMappingURL=task3mixin.css.map */
